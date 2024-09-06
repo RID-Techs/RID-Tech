@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RID Tech</title>
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="shortcut icon" href="./img/RID_Tech_WebSite_Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
@@ -19,13 +20,16 @@
         <div class="collapse navbar-collapse" id="navbarsExample03">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link active text-black first" aria-current="page" href="index.html">Accueil</a>
+                    <a class="nav-link text-black active" aria-current="page" href="index.html">Accueil</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-black" href="#service">Services</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-black" href="#article">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="./prestations.html">Grille Tarifaire</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-black" href="#contact">Contact</a>
@@ -36,22 +40,26 @@
     </nav>
 
     <div class="container mt-5">
-        <h1>Bienvenue sur RID Tech...</h1>
+        <h1>Bienvenue sur  <span id="Rid-Tech">RID Tech...</span></h1>
     <div class="row justify-content-xxl-end justify-content-xl-end justify-content-lg-end justify-content-md-end">
         <div class="col-xxl-6 col-xl-5 col-lg-4 col-md-8 col-sm-10 col-11">
-            <h2 class="mt-3 nice">Vous souhaitez vous faire installer un espace wifizone, avoir vos Mikrotik bien configurés,
-                avoir un magnifique portail captif Wi-fi mettant en avant et en valeur votre business  et differents services que vous offrez ou articles que vous vendez.
-                Ou, souhaitez-vous plutôt vous faire installer votre antenne parabolique (Canal+, New World TV, Bercy...), alors, vous êtes au bon endroit !</h2>
+            <h2 class="mt-3 nice">Vous souhaitez vous faire installer <span id="services-options">
+              <strong>un espace Wi-Fi zone, avoir vos Mikrotik bien configurés,
+                avoir un magnifique portail captif Wi-fi mettant en avant et en valeur votre business, et differents services que vous offrez ou articles que vous vendez.</strong>
+            </span>
+                Ou, souhaitez-vous plutôt vous faire installer <span id="antenna"><strong>une antenne parabolique (Canal+, New World TV, Bercy...).</strong> </span> Alors, vous êtes au bon endroit !</h2>
         </div>
     </div>
     </div>
 </header>
 
-<div class="container mt-5 second" id="service">
-<h2 class="text-center"> <span id="arrow">>></span>  Nos Services</h2>
+  <div id="round-figure"></div>
+
+<div class="container second" id="service">
+<h2 class="text-center"> <span id="arrow">>></span> Services</h2>
 </div>
 
-<div class="container">
+<div class="container mt-4">
     
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-lg-6 g-4">
         <div class="col">
@@ -59,16 +67,18 @@
                 <div id="img_1" class="card-img-top"> </div>
                 <div class="card-body">
                 <h5 class="card-title"><span style="color: red;">*</span> Wifi & Mikrotik</h5>
+                <hr>
                 <p class="card-text">
-                    <ul>
-                        <li>Configuration de mikrotik</li>
-                        <li>Création et Gestion des tickets wifi</li>
-                        <li>Sertissage de câbles réseaux </li>
-                        <li>Configuration des routeurs</li>
-                        <li>Configuration des antennes wifi</li>
+                    <ul class="services-details">
+                        <li><a class="services-text-color">Configuration de mikrotik</a></li>
+                        <li><a class="services-text-color">Création et Gestion des tickets wifi</a></li>
+                        <li><a class="services-text-color">Sertissage de câbles réseaux</a> </li>
+                        <li><a class="services-text-color">Configuration des routeurs</a></li>
+                        <li><a class="services-text-color">Configuration des antennes wifi</a></li>
+                        <li><a class="services-text-color">Système de paiement de ticket Wi-Fi en ligne via Tmoney et Moov money</a></li>
                     </ul>
                 </p>
-                <a href="https://wa.me/22879836219?text=Salut" class="btn btn-primary fs-5"><img style="width: 32px;" src="./img/whatsapp_1.png" alt=""> WhatsApp</a>
+                <a href="https://wa.me/22879836219?text=Salut Mr le Technicien..." class="text-decoration-none px-2 py-2 rounded-3 fs-5 contact-hover"><img style="width: 32px;" src="./img/whatsapp_1.png" alt="WhatsApp"> WhatsApp</a>
                 </div>
             </div>
         </div>
@@ -77,16 +87,18 @@
                 <div id="img_2" class="card-img-top"> </div>
                 <div class="card-body">
                 <h5 class="card-title"><span style="color: red;">*</span> Antennes Paraboliques</h5>
+                <hr>
                 <p class="card-text">
-                    <ul>
-                        <li>Montage et installation d'antennes paraboliques</li>
-                        <li>Couplage de LNB</li>
-                        <li>Programmation des chaînes TV</li>
-                        <li>( Canal+, New Worl TV, Bercy... )</li>
+                    <ul class="services-details">
+                        <li><a class="services-text-color">Montage et installation d'antennes paraboliques</a></li>
+                        <li><a class="services-text-color">Couplage de LNB</a></li>
+                        <li><a class="services-text-color">Programmation minutieuse des chaînes TV</a></li>
+                        <li><a class="services-text-color">Programmation personnalisée des chaînes TV</a></li>
+                        <li><a class="services-text-color">( Canal+, New World TV, Bercy... )</a</li>
                     </ul>
 
                 </p>
-                <a href="https://wa.me/22879836219?text=Salut" class="btn btn-primary fs-5"><img style="width: 32px;" src="./img/whatsapp_1.png" alt=""> WhatsApp</a>
+                <a href="https://wa.me/22879836219?text=Salut Mr le Technicien..." class="text-decoration-none px-2 py-2 rounded-3 fs-5 contact-hover"><img style="width: 32px;" src="./img/whatsapp_1.png" alt="WhatsApp"> WhatsApp</a>
                 </div>
             </div>
         </div>
@@ -95,18 +107,20 @@
                 <div id="img_3" class="card-img-top"> </div>
                 <div class="card-body">
                 <h5 class="card-title"><span style="color: red;">*</span> Portails Captifs Wi-Fi</h5>
+                <hr>
                 <p class="card-text">
-                    <ul>
-                        <li>Création et implémentation des portails captifs wi-fi</li>
-                        <li>Personnalisation des portails captifs</li>
-                        <li>Personnalisation des portails captifs avec un espace boutique</li>
+                    <ul class="services-details">
+                        <li><a class="services-text-color">Création et implémentation des portails captifs wi-fi</a></li>
+                        <li><a class="services-text-color">Personnalisation des portails captifs</a></li>
+                        <li><a class="services-text-color">Personnalisation des portails captifs avec un espace boutique</a></li>
+                        <li><a class="services-text-color">Ajout d'un espace de paiement de ticket Wi-Fi en ligne via Tmoney et Moov money</a></li>
                     </ul>
 
                     <p>
-                        <span style="text-decoration: underline;">NB</span> : Nous personnalisons les portalis captifs wi-fi selon votre secteur d'activité également. (Commerce, Agriculture, Restauration...)
+                        <strong><span style="text-decoration: underline red;">NB</span> </strong>: Je vous personnalise les portalis captifs wi-fi selon votre secteur d'activité également. (Commerce, Agriculture, Restauration...)
                     </p>
                 </p>
-                <a href="https://wa.me/22879836219?text=Salut" class="btn btn-primary fs-5"><img style="width: 32px;" src="./img/whatsapp_1.png" alt=""> WhatsApp</a>
+                <a href="https://wa.me/22879836219?text=Salut Mr le Technicien..." class="text-decoration-none px-2 py-2 rounded-3 fs-5 contact-hover"><img style="width: 32px;" src="./img/whatsapp_1.png" alt="WhatsApp"> WhatsApp</a>
                 </div>
             </div>
         </div>
@@ -114,18 +128,21 @@
             <div class="card picture">
                 <div id="img_4" class="card-img-top"> </div>
                 <div class="card-body">
-                <h5 class="card-title"><span style="color: red;">*</span> Sites Vitrines</h5>
+                <h5 class="card-title"><span style="color: red;">*</span> Sites Web</h5>
+                <hr>
                 <p class="card-text">
-                    <ul>
-                        <li>Création de sites vitrines pour votre entreprise ou pour vos différents secteurs d'activités.</li>
+                    <ul class="services-details">
+                        <li> <a class="services-text-color">Création de Landing Page </a> </li>
+                        <li> <a class="services-text-color">Création de Sites Vitrines </a> </li>
+                        <li> <a class="services-text-color">Développement d'Applications Web </a> </li>
                     </ul>
 
                     <p>
-                        <span style="text-decoration: underline;">NB</span> : Un site vitrine vous permet de mettre en valeur non seulement votre secteur d'activité ou votre entreprise, mais aussi les services que vous y offrez.
-                        De surcroît, vous créez une bonne interaction entre votre clientèle et vous, tout en attirant plus de personnes vers votre entreprise ou votre secteur d'activité, ce qui revient à accroître votre capital.
+                        <strong><span style="text-decoration: underline red;">NB</span></strong> : Un site web vous permet de mettre en valeur non seulement votre secteur d'activité ou votre entreprise, mais aussi les services que vous y offrez.
+                        De surcroît, vous créez une bonne interaction entre votre clientèle et vous, tout en attirant plus de personnes vers votre entreprise ou votre secteur d'activité, ce qui revient à accroître votre capital, tout en gardant une image professionnelle de votre business.
                     </p>
                 </p>
-                <a href="https://wa.me/22879836219?text=Salut" class="btn btn-primary fs-5"><img style="width: 32px;" src="./img/whatsapp_1.png" alt=""> WhatsApp</a>
+                <a href="https://wa.me/22879836219?text=Salut Mr le Technicien..." class="text-decoration-none px-2 py-2 rounded-3 fs-5 contact-hover"><img style="width: 32px;" src="./img/whatsapp_1.png" alt="WhatsApp"> WhatsApp</a>
                 </div>
             </div>
         </div>
@@ -134,10 +151,10 @@
     
 
 <div class="container mt-5 second" id="article">
-    <h2 class="text-center"> <span id="arrow">>></span>  Nos Articles</h2>
-    <p class="text-center mt-4" >Nous vous proposons <strong><em> de beaux et importants portails captifs dynamiques pour votre espace Wif-Fi Zone </em></strong>.
-        Parcourez les et faites nous savoir celui qui vous intéresse selon vos besoins.</p>
-        <p> <span style="text-decoration: underline;">NB</span> : Cliquez sur chaque image pour voir ses composantes plus explicitement.</p>
+    <h2 class="text-center"> <span id="arrow">>></span> Articles</h2>
+    <p class="text-center mt-4" >Je vous propose ici <strong><em> de beaux et importants portails captifs dynamiques pour votre espace Wif-Fi Zone </em></strong>.
+        Parcourez les et faites moi savoir celui qui vous intéresse selon vos besoins.</p>
+        <p> <strong><span style="text-decoration: underline red;">NB</span></strong> : Cliquez sur chaque image pour voir ses composantes plus explicitement.</p>
     </div>
 
 
@@ -145,7 +162,7 @@
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
       <div class="col">
         <div class="card sliderCard"> 
-          <img src="./img/nickel/mock_8.jpeg" alt="1">
+          <img src="./img/nickel/mock_8.png" alt="1">
         </div>
         
         <div class="modal" id="modal">
@@ -157,7 +174,7 @@
           
       <div class="col">
         <div class="card sliderCard"> 
-            <img src="./img/nickel/mock_13.jpeg" alt="2">
+            <img src="./img/nickel/mock_13.png" alt="2">
         </div>
         
         <div class="modal" id="modal">
@@ -168,7 +185,7 @@
       </div>
       <div class="col">
         <div class="card sliderCard">
-            <img src="./img/nickel/mock_1.jpeg" alt="3">
+            <img src="./img/nickel/mock_1.png" alt="3">
         </div>
         
         <div class="modal" id="modal">
@@ -179,7 +196,7 @@
       </div>
       <div class="col">
         <div class="card sliderCard"> 
-            <img src="./img/nickel/mock_2.jpeg" alt="4">
+            <img src="./img/nickel/mock_2.png" alt="4">
         </div>
         
         <div class="modal" id="modal">
@@ -190,7 +207,7 @@
       </div>
       <div class="col">
         <div class="card sliderCard">
-            <img src="./img/nickel/mock_9.jpeg" alt="5">
+            <img src="./img/nickel/mock_9.png" alt="5">
         </div>
         
         <div class="modal" id="modal">
@@ -201,111 +218,13 @@
       </div>
       <div class="col">
         <div class="card sliderCard">
-            <img src="./img/nickel/mock_10.jpeg" alt="6">
+            <img src="./img/nickel/mock_10.png" alt="6">
         </div>
         
         <div class="modal" id="modal">
           <img src="" alt="Modal Image">
         </div>
         
-        <div class="thumbnails" id="thumbnails"></div>
-      </div>
-      <div class="col">
-        <div class="card sliderCard">
-            <img src="./img/nickel/mock_11.jpeg" alt="7">
-        </div>
-        
-        <div class="modal" id="modal">
-          <img src="" alt="Modal Image">
-        </div>
-        
-        <div class="thumbnails" id="thumbnails"></div>
-      </div>
-      <div class="col">
-        <div class="card sliderCard">
-            <img src="./img/nickel/mock_7.jpeg" alt="8">
-        </div>
-        
-        <div class="modal" id="modal">
-          <img src="" alt="Modal Image">
-        </div>
-        
-        <div class="thumbnails" id="thumbnails"></div>
-      </div>
-      <div class="col">
-        <div class="card sliderCard">
-            <img src="./img/nickel/mock_4.jpeg" alt="9">
-        </div>
-        
-        <div class="modal" id="modal">
-          <img src="" alt="Modal Image">
-        </div>
-        
-        <div class="thumbnails" id="thumbnails"></div>
-      </div>
-      <div class="col">
-        <div class="card sliderCard"> 
-            <img src="./img/nickel/mock_12.jpeg" alt="10">
-        </div>
-        
-        <div class="modal" id="modal">
-          <img src="" alt="Modal Image">
-        </div>
-        
-        <div class="thumbnails" id="thumbnails"></div>
-      </div>
-      <div class="col">
-        <div class="card sliderCard"> 
-            <img src="./img/nickel/mock_14.jpeg" alt="11">
-        </div>
-        
-        <div class="modal" id="modal">
-          <img src="" alt="Modal Image">
-        </div>
-        
-        <div class="thumbnails" id="thumbnails"></div>
-      </div>
-      <div class="col">
-        <div class="card sliderCard">
-            <img src="./img/nickel/mock_5.jpeg" alt="12">
-        </div>
-        
-        <div class="modal" id="modal">
-          <img src="" alt="Modal Image">
-        </div>
-        
-        <div class="thumbnails" id="thumbnails"></div>
-      </div>
-      <div class="col">
-        <div class="card sliderCard">
-            <img src="./img/nickel/mock_3.jpeg" alt="13">
-        </div>
-        
-        <div class="modal" id="modal">
-          <img src="" alt="Modal Image">
-        </div>
-        
-        <div class="thumbnails" id="thumbnails"></div>
-      </div>
-      <div class="col">
-        <div class="card sliderCard"> 
-            <img src="./img/nickel/mock_6.jpeg" alt="14">
-        </div>
-        
-        <div class="modal" id="modal">
-          <img src="" alt="Modal Image">
-        </div>
-        
-        <div class="thumbnails" id="thumbnails"></div>
-      </div>
-      <div class="col">
-        <div class="card sliderCard"> 
-            <img src="./img/Flyers_2.0/Mockup_21.png" alt="15">
-        </div>
-        
-        <div class="modal" id="modal">
-          <img src="" alt="Modal Image">
-        </div>
         <div class="thumbnails" id="thumbnails"></div>
       </div>
       </div>
@@ -315,8 +234,8 @@
     <div class="container mt-5 second" id="contact">
       <h2 class="text-center"> <span id="arrow">>></span>  Contact</h2>
 
-      <h4 class="mt-4">Nous sommes joignables au : <strong><em>+228 79 83 62 19</em></strong></h4>
-      <p>Vous pouvez également nous contacter en cliquant sur ces liens ci-desssous. <span style="font-size: 1.5rem;"><strong>&DownArrow;&DownArrow;&DownArrow;</strong></span></p>
+      <h4 class="mt-4">Je suis joignable au : <strong><em>+228 79 83 62 19</em></strong></h4>
+      <p>Vous pouvez également me contacter en cliquant sur ces liens ci-desssous. <span style="font-size: 1.5rem;"><strong>&DownArrow;&DownArrow;&DownArrow;</strong></span></p>
 
       </div>
     
@@ -326,13 +245,13 @@
           <ul>
             <li><a href="https://wa.me/22879836219"> <img height="33px" style="border: 1px solid transparent; border-radius: 5px" src="./img/whatsapp.png" alt="1"> WhatsApp</a></li>
             <li><a href="https://www.facebook.com/RIDTechWifiMikrotik"> <img height="33px" style="border: 1px solid transparent; border-radius: 5px" src="./img/facebook.png" alt="2"> Facebook</a></li>
-            <li><a href="https://www.tiktok.com/@marcolevel45?_t=8fA90X1V3lW&_r=1"> <img height="32px" src="./img/TikTok.png" alt="3"> TikTok</a></li>
+            <li><a href="https://www.tiktok.com/@rid_techs"> <img height="32px" src="./img/TikTok.png" alt="3"> TikTok</a></li>
           </ul>
         </footer>
-        <p class="text-center mt-4"> 2023 | RID Tech | All Rights Reserved.</p>
+        <p class="text-center mt-4"> 2024 | RID Tech - All Rights Reserved.</p>
       </div>
     
-    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <script>
         const cards = document.querySelectorAll('.sliderCard'); 
         const modal = document.getElementById('modal');
@@ -341,80 +260,33 @@
         
         const imagesData = [
           {
-            mainImage: './img/nickel/mock_8.jpeg',
-            slides: ['./img/nickel/mock_8.jpeg', './img/Flyers_2.0/Mockup_27.png', './img/Flyers_2.0/Mockup_28.png', './img/Flyers_2.0/Mockup_29.png', './img/Flyers_2.0/Mockup_30.png', 
-            './img/Flyers_2.0/Mockup_9.png', './img/Screenshot/Screns_52.jpg', './img/Screenshot/Screns_56.jpg']
+            mainImage: './img/nickel/mock_8.png',
+            slides: ['./img/nickel/mock_8.png', './img/Ready_Page/Badaro_1.png', './img/Ready_Page/Badaro_4.png', './img/Ready_Page/Badaro_8.png', './img/Ready_Page/Badaro_12.png', 
+            './img/Ready_Page/Badaro_11.png', './img/Ready_Page/Badaro_15.png', './img/Ready_Page/Badaro_5.png']
           },
           {
-            mainImage: './img/nickel/mock_13.jpeg',
-            slides: ['./img/nickel/mock_13.jpeg', './img/Screenshot/Screns_64.jpg', './img/Screenshot/Screns_66.jpg', './img/Screenshot/Screns_69.jpg', 
-            './img/Screenshot/Screns_70.jpg', './img/Screenshot/Screns_71.jpg', './img/Screenshot/Screns_65.jpg', './img/Screenshot/Screns_67.jpg', './img/Screenshot/Screns_68.jpg'
+            mainImage: './img/nickel/mock_13.png',
+            slides: ['./img/nickel/mock_13.png', './img/Ready_Page/Login_One_1.png', './img/Ready_Page/Login_One_3.png', './img/Ready_Page/Login_One_6.png', 
+            './img/Ready_Page/Login_One_4.png', './img/Ready_Page/Login_One_5.png'
           ]
           },
           {
-            mainImage: './img/nickel/mock_1.jpeg',
-            slides: ['./img/nickel/mock_1.jpeg', './img/Flyers_2.0/Mockup_1.jpeg', './img/Flyers_2.0/Mockup_2.png', './img/Flyers_2.0/Mockup_3.png', './img/Flyers_2.0/Mockup_4.png', 
-            './img/Flyers_2.0/Mockup_5.png', './img/Flyers_2.0/Mockup_6.png', './img/Flyers_2.0/Mockup_7.png', './img/Flyers_2.0/Mockup_8.png', './img/Flyers_2.0/Mockup_9.png'
+            mainImage: './img/nickel/mock_1.png',
+            slides: ['./img/nickel/mock_1.png', './img/Ready_Page/Login_Two_1.png', './img/Ready_Page/Login_Two_2.png', './img/Ready_Page/Login_Two_3.png', './img/Ready_Page/Login_Two_4.png', './img/Ready_Page/Login_Two_7.png'
         ]
           },
           {
-            mainImage: './img/nickel/mock_2.jpeg',
-            slides: ['./img/nickel/mock_2.jpeg', './img/Screenshot/Screns_13.jpg', './img/Screenshot/Screns_14.jpg', './img/Screenshot/Screns_15.jpg', 
-            './img/Screenshot/Screns_16.jpg']
+            mainImage: './img/nickel/mock_2.png',
+            slides: ['./img/nickel/mock_2.png', './img/Ready_Page/Login_Three_1.png', './img/Ready_Page/Login_Three_3.png', './img/Ready_Page/Login_Three_2.png', './img/Ready_Page/Login_Three_4.png', './img/Ready_Page/Login_Three_5.png']
           },
           {
-            mainImage: './img/nickel/mock_9.jpeg',
-            slides: ['./img/nickel/mock_9.jpeg', './img/Screenshot/Screns_26.jpg', './img/Screenshot/Screns_30.jpg', './img/Screenshot/Screns_27.jpg', 
-            './img/Screenshot/Screns_29.jpg', './img/Screenshot/Screns_28.jpg']
+            mainImage: './img/nickel/mock_9.png',
+            slides: ['./img/nickel/mock_9.png', './img/Ready_Page/Rajan_1.png', './img/Ready_Page/Rajan_3.png', './img/Ready_Page/Rajan_5.png', './img/Ready_Page/Rajan_7.png', './img/Ready_Page/Rajan_14.png', './img/Ready_Page/Rajan_9.png', './img/Ready_Page/Rajan_13.png', './img/Ready_Page/Rajan_16.png',]
           },
           {
-            mainImage: './img/nickel/mock_10.jpeg',
-            slides: ['./img/nickel/mock_10.jpeg', './img/Screenshot/Screns_33.jpg', './img/Screenshot/Screns_34.jpg', './img/Screenshot/Screns_35.jpg', 
-            './img/Screenshot/Screns_36.jpg', './img/Screenshot/Screns_37.jpg']
-          },
-          {
-            mainImage: './img/nickel/mock_11.jpeg',
-            slides: ['./img/nickel/mock_11.jpeg', './img/Screenshot/Screns_41.jpg', './img/Screenshot/Screns_42.jpg', './img/Screenshot/Screns_47.jpg', 
-            './img/Screenshot/Screns_48.jpg', './img/Screenshot/Screns_44.jpg', './img/Screenshot/Screns_49.jpg', './img/Screenshot/Screns_46.jpg', './img/Screenshot/Screns_45.jpg']
-          },
-          {
-            mainImage: './img/nickel/mock_7.jpeg',
-            slides: ['./img/nickel/mock_7.jpeg', './img/Screenshot/Screns_3.jpg', './img/Screenshot/Screns_4.jpg', './img/Screenshot/Screns_5.jpg']
-          },
-          {
-            mainImage: './img/nickel/mock_4.jpeg',
-            slides: ['./img/nickel/mock_4.jpeg', './img/Screenshot/Screns_7.jpg', './img/Screenshot/Screns_31.jpg', './img/Screenshot/Screns_32.jpg']
-          },
-          {
-            mainImage: './img/nickel/mock_12.jpeg',
-            slides: ['./img/nickel/mock_12.jpeg', './img/Flyers_2.0/Mockup_31.png', './img/Flyers_2.0/Mockup_32.png', './img/Flyers_2.0/Mockup_33.png', './img/Flyers_2.0/Mockup_35.png', 
-            './img/Flyers_2.0/Mockup_34.png', './img/Screenshot/Screns_58.jpg', './img/Screenshot/Screns_63.jpg', './img/Screenshot/Screns_61.jpg', './img/Screenshot/Screns_60.jpg']
-          },
-          {
-            mainImage: './img/nickel/mock_14.jpeg',
-            slides: ['./img/nickel/mock_14.jpeg', './img/Screenshot/Screns_75.jpg', './img/Screenshot/Screns_82.jpg', './img/Screenshot/Screns_77.jpg', 
-            './img/Screenshot/Screns_80.jpg', './img/Screenshot/Screns_79.jpg', './img/Screenshot/Screns_84.jpg', './img/Screenshot/Screns_86.jpg', './img/Screenshot/Screns_85.jpg', 
-            './img/Screenshot/Screns_76.jpg', './img/Screenshot/Screns_78.jpg']
-          },
-          {
-            mainImage: './img/nickel/mock_5.jpeg',
-            slides: ['./img/nickel/mock_5.jpeg', './img/Flyers_2.0/Mockup_12.png', './img/Flyers_2.0/Mockup_11.png', './img/Flyers_2.0/Mockup_13.png', './img/Flyers_2.0/Mockup_14.png', 
-            './img/Flyers_2.0/Mockup_15.png', './img/Flyers_2.0/Mockup_16.png', './img/Flyers_2.0/Mockup_17.png', './img/Flyers_2.0/Mockup_18.png', './img/Flyers_2.0/Mockup_19.png', 
-            './img/Screenshot/Screns_24.jpg', './img/Screenshot/Screns_25.jpg']
-          },
-          {
-            mainImage: './img/nickel/mock_3.jpeg',
-            slides: ['./img/nickel/mock_3.jpeg', './img/Screenshot/Screns_2.jpg', './img/Screenshot/Screns_1.jpg', './img/Screenshot/Screns_87.png']
-          },
-          {
-            mainImage: './img/nickel/mock_6.jpeg',
-            slides: ['./img/nickel/mock_6.jpeg', './img/Screenshot/Screns_38.jpg', './img/Screenshot/Screns_39.jpg', './img/Screenshot/Screns_40.jpg']
-          },
-          {
-            mainImage: './img/Flyers_2.0/Mockup_21.png',
-            slides: ['./img/Flyers_2.0/Mockup_21.png', './img/Flyers_2.0/Mockup_20.png', './img/Flyers_2.0/Mockup_22.png', './img/Flyers_2.0/Mockup_24.png', 
-            './img/Flyers_2.0/Mockup_26.png', './img/Flyers_2.0/Mockup_25.png', './img/Flyers_2.0/Mockup_23.png', './img/Flyers_2.0/Mockup_9.png']
-          },
+            mainImage: './img/nickel/mock_10.png',
+            slides: ['./img/nickel/mock_10.png', './img/Ready_Page/Single_Page.png', './img/Ready_Page/Single_Page_2.png', './img/Ready_Page/Single_Page_3.png', './img/Ready_Page/Single_Page_8.png', './img/Ready_Page/Single_Page_5.png', './img/Ready_Page/Single_Page_10.png', './img/Ready_Page/Single_Page_14.png', './img/Ready_Page/Single_Page_16.png', './img/Ready_Page/Single_Page_11.png', './img/Ready_Page/Single_Page_12.png', './img/Ready_Page/Single_Page_13.png']
+          }
         ];
     
         let currentMainIndex = 0;

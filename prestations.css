@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+nav ul li .active{
+    background-color: rgba(240, 248, 255, 0.336);
+    box-shadow: 0px 0px 12px #000;
+    padding-left: 5px;
+}
+
+
+nav ul li a:hover{
+    background-color: rgba(240, 248, 255, 0.336);
+    box-shadow: 0px 0px 12px #000;
+}
+
+.pricing-title h1{
+    text-align: center;
+}
+#price-title{
+    text-decoration: underline dotted red;
+    text-underline-offset: 6px;
+}
+
+.pretty{
+    color: rgb(128, 0, 60);
+}
+#price-message{
+    font-size: 1.2rem;
+}
+
+.first-service{
+    background-color: rgb(233, 233, 233);
+    padding: 1em;
+    border-radius: 20px;
+    position: relative;
+}
+
+.service-item{
+    display: inline-flex;
+    gap: 1em;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0), inset -3px -3px 3px rgb(160, 62, 62);
+    padding: 1em;
+    background-color: snow;
+    border-left: #000 solid;
+    border-top-left-radius: 20px;
+}
+.service-item p {
+    align-self: flex-end;
+}
+
+.service-holder{
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+
+}
+.service-price-tag{
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 5px rgb(168, 167, 167);
+    padding: 1em;
+}
+
+.last {
+    background-image: linear-gradient(to left, #3333330a, rgba(226, 220, 220, 0.411) 50%, #3333330e);
+}
+    footer ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        justify-content: center;
+    }
+
+    footer ul li {
+        list-style: none;
+        text-decoration: none;
+    }
+    footer ul li a{
+        color: #000;
+        text-decoration: none;
+    }
+
+    footer ul li a:hover {
+    color: rgb(255, 0, 76);
+    }

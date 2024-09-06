@@ -1,24 +1,59 @@
+@font-face {
+  font-family: Lora-Italic-VariableFont_wght;
+  src: url(./Lora-Italic-VariableFont_wght.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     background-image: linear-gradient(145deg, white, rgba(0, 255, 255, 0.233), white);
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 header{
     background-image: linear-gradient(239deg, #796262ea, #fff), url(./img/vector.jpg);
 }
 
+#Rid-Tech {
+  font-family: Lora-Italic-VariableFont_wght;
+  font-weight: bold;
+  background-color: #000;
+  color: #fff;
+  padding: 0.1em;
+  border-radius: 15px;
+}
+
+#service, #article, #contact{
+  scroll-margin-top: 3em;
+}
+
+#services-options, #antenna {
+  border-bottom: 3px dotted rgb(255, 0, 55);
+}
 .nice {
     font-size: 1.2rem;
+    line-height: 1.5em;
     background-color: #ffffffdc;
     padding: 0.6em;
     border-radius: 20px;
     filter: drop-shadow(0px 0px 12px #000);
+    -webkit-filter: drop-shadow(0px 0px 12px #000);
+}
+
+#round-figure{
+  border: solid rgba(143, 31, 31, 0.884);
+  box-shadow: inset 0px 3px 3px rgb(129, 127, 127);
+  height: 100px;
+  border-top-left-radius: 500%;
+  border-right: transparent;
+  border-left: transparent;
+  border-bottom: transparent;
 }
 
 #arrow{
@@ -42,12 +77,8 @@ header{
     border-bottom: 2px dotted #000;
     
 }
-.second h2:hover{
-    transition: 0.1s linear;
-    border-bottom: 2px dashed #000;
-}
 
-nav ul li .first{
+nav ul li .active{
     background-color: rgba(240, 248, 255, 0.336);
     box-shadow: 0px 0px 12px #000;
     padding-left: 5px;
@@ -57,6 +88,26 @@ nav ul li .first{
 nav ul li a:hover{
     background-color: rgba(240, 248, 255, 0.336);
     box-shadow: 0px 0px 12px #000;
+}
+
+.services-details li{
+  color: rgb(255, 0, 119);
+}
+
+.services-text-color{
+  text-decoration: none;
+  color: #000;
+}
+.contact-hover{
+  color: #000;
+  background-color: rgb(213, 237, 247);
+  box-shadow: 0px 0px 5px rgb(121, 41, 41);
+  transition: all 0.3s ease-in-out;
+}
+.contact-hover:hover{
+  background-color: rgb(255, 248, 189);
+  box-shadow: 0px 2px 5px rgb(161, 6, 45);
+  
 }
 
 .picture #img_1{
@@ -70,7 +121,7 @@ nav ul li a:hover{
     height: 250px;
 }
 .picture #img_3{
-    background-image: linear-gradient(to top, #fff, rgba(255, 0, 0, 0.075)), url(./img/nickel/mock_13.jpeg);
+    background-image: linear-gradient(to top, #fff, rgba(255, 0, 0, 0.075)), url(./img/nickel/mock_13.png);
     background-size: cover;
     height: 250px;
 }
@@ -144,7 +195,7 @@ nav ul li a:hover{
     background-image: url();
   }
 .last {
-    background-image: linear-gradient(to left, #33333385, rgb(226, 220, 220) 50%, #33333394);
+    background-image: linear-gradient(to left, #3333330a, rgba(226, 220, 220, 0.411) 50%, #3333330e);
 }
   footer ul {
     display: flex;

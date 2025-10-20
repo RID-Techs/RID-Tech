@@ -1,3 +1,14 @@
+:root {
+  --body-linear: linear-gradient(145deg, #F8F9FA, #E9ECEF);
+  --header-linear: linear-gradient(135deg, #1D3557, #0F0F0F);
+  --header-text: #FFFFFF;
+  --background-color: #F8F9FA;
+  --text-color: #1A1A1A;
+  --highlight-color: #E63946;
+  --links-icons: #457B9D;
+  --divider-color: rgba(255, 255, 255, 0.1);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,38 +16,60 @@
 }
 
 body{
-    background-color: aliceblue;
+    background-image: var(--body-linear);
+    min-height: 100vh;
+    width: 100%;
+    scroll-behavior: smooth;
+    color: var(--text-color);
 }
 
+header{
+    background-image: var(--header-linear), url(./img/vector.jpg);
+    color: var(--header-text);
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
 nav ul li .active{
-    background-color: rgba(240, 248, 255, 0.336);
-    box-shadow: 0px 0px 12px #000;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 12px var(--text-color);
     padding-left: 5px;
 }
 
 
-nav ul li a:hover{
-    background-color: rgba(240, 248, 255, 0.336);
-    box-shadow: 0px 0px 12px #000;
+.nav-link{
+    color: #F1FAEE;
+    transition: color 0.3s ease;
+}
+.nav-link:hover{
+    color: var(--highlight-color);
 }
 
 .pricing-title h1{
     text-align: center;
 }
 #price-title{
-    text-decoration: underline dotted red;
+    text-decoration: underline dotted var(--highlight-color);
     text-underline-offset: 6px;
 }
 
 .pretty{
-    color: rgb(128, 0, 60);
+    color: var(--links-icons);
 }
 #price-message{
     font-size: 1.2rem;
 }
 
 .first-service{
-    background-color: rgb(233, 233, 233);
+    background-color: var(--header-text);
     padding: 1em;
     border-radius: 20px;
     position: relative;
@@ -45,10 +78,10 @@ nav ul li a:hover{
 .service-item{
     display: inline-flex;
     gap: 1em;
-    box-shadow: 3px 3px 3px rgb(0, 0, 0), inset -3px -3px 3px rgb(160, 62, 62);
+    box-shadow: 3px 3px 3px var(--text-color), inset -3px -3px 3px var(--highlight-color);
     padding: 1em;
-    background-color: snow;
-    border-left: #000 solid;
+    background-color: var(--background-color);
+    border-left: var(--text-color) solid;
     border-top-left-radius: 20px;
 }
 .service-item p {
@@ -63,13 +96,13 @@ nav ul li a:hover{
 
 }
 .service-price-tag{
-    background-color: whitesmoke;
-    box-shadow: 0px 0px 5px rgb(168, 167, 167);
+    background-color: var(--background-color);
+    box-shadow: 0px 0px 5px var(--links-icons);
     padding: 1em;
 }
 
 .last {
-    background-image: linear-gradient(to left, #3333330a, rgba(226, 220, 220, 0.411) 50%, #3333330e);
+    background-color: var(--background-color);
 }
     footer ul {
         display: flex;
@@ -83,10 +116,10 @@ nav ul li a:hover{
         text-decoration: none;
     }
     footer ul li a{
-        color: #000;
+        color: var(--text-color);
         text-decoration: none;
     }
 
     footer ul li a:hover {
-    color: rgb(255, 0, 76);
+    color: var(--highlight-color);
     }

@@ -2,7 +2,16 @@
   font-family: Lora-Italic-VariableFont_wght;
   src: url(./Lora-Italic-VariableFont_wght.ttf);
 }
-
+:root {
+  --body-linear: linear-gradient(145deg, #F8F9FA, #E9ECEF);
+  --header-linear: linear-gradient(135deg, #1D3557, #0F0F0F);
+  --header-text: #FFFFFF;
+  --background-color: #F8F9FA;
+  --text-color: #1A1A1A;
+  --highlight-color: #E63946;
+  --links-icons: #457B9D;
+  --divider-color: rgba(255, 255, 255, 0.1);
+}
 *{
     margin: 0;
     padding: 0;
@@ -10,21 +19,25 @@
 }
 
 body{
-    background-image: linear-gradient(145deg, white, rgba(0, 255, 255, 0.233), white);
+    background-image: var(--body-linear);
     min-height: 100vh;
     width: 100%;
     scroll-behavior: smooth;
+    color: var(--text-color);
 }
 
 header{
-    background-image: linear-gradient(239deg, #796262ea, #fff), url(./img/vector.jpg);
+    background-image: var(--header-linear), url(./img/vector.jpg);
+    color: var(--header-text);
 }
 
 #Rid-Tech {
   font-family: Lora-Italic-VariableFont_wght;
   font-weight: bold;
-  background-color: #000;
-  color: #fff;
+  background: linear-gradient(90deg, #E63946, #F1FAEE);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   padding: 0.1em;
   border-radius: 15px;
 }
@@ -34,20 +47,24 @@ header{
 }
 
 #services-options, #antenna {
-  border-bottom: 3px dotted rgb(255, 0, 55);
+  border-bottom: 3px dotted #E63946;
+}
+.card-body{
+    background-color: var(--background-color);
 }
 .nice {
     font-size: 1.2rem;
     line-height: 1.5em;
-    background-color: #ffffffdc;
+    background-color: var(--background-color);
+    color: var(--text-color);
     padding: 0.6em;
     border-radius: 20px;
-    filter: drop-shadow(0px 0px 12px #000);
-    -webkit-filter: drop-shadow(0px 0px 12px #000);
+    filter: drop-shadow(0px 0px 12px var(--text-color));
+    -webkit-filter: drop-shadow(0px 0px 12px var(--text-color));
 }
 
 #round-figure{
-  border: solid rgba(143, 31, 31, 0.884);
+  border: solid var(--divider-color);
   box-shadow: inset 0px 3px 3px rgb(129, 127, 127);
   height: 100px;
   border-top-left-radius: 500%;
@@ -58,85 +75,97 @@ header{
 
 #arrow{
     position: absolute;
-    color: red;
-    animation: 0.6s move alternate-reverse infinite;
+    color: var(--highlight-color);
+    animation: moveArrow 1.2s infinite alternate;
     margin-left: -2em;
 }
 
-@keyframes move {
-    0%{
-        margin-left: -3em;
-    }
-    100%{
-        margin-left: "";
-    }
+@keyframes moveArrow {
+    from { transform: translateX(0); }
+  to { transform: translateX(5px); }
 }
 
 .second h2{
     cursor: pointer;
-    border-bottom: 2px dotted #000;
+    border-bottom: 2px dotted var(--text-color);
     
 }
 
+nav {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
 nav ul li .active{
-    background-color: rgba(240, 248, 255, 0.336);
-    box-shadow: 0px 0px 12px #000;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 12px var(--text-color);
     padding-left: 5px;
 }
 
 
-nav ul li a:hover{
-    background-color: rgba(240, 248, 255, 0.336);
-    box-shadow: 0px 0px 12px #000;
+.nav-link{
+    color: #F1FAEE;
+    transition: color 0.3s ease;
+}
+.nav-link:hover{
+    color: var(--highlight-color);
 }
 
 .services-details li{
-  color: rgb(255, 0, 119);
+  color: var(--highlight-color);
 }
 
 .services-text-color{
   text-decoration: none;
-  color: #000;
+  color: var(--text-color);
 }
 .contact-hover{
-  color: #000;
-  background-color: rgb(213, 237, 247);
-  box-shadow: 0px 0px 5px rgb(121, 41, 41);
+  color: var(--text-color);
+  background-color: var(--links-icons);
+  color: var(--header-text);
+  box-shadow: 0px 0px 5px var(--links-icons);
   transition: all 0.3s ease-in-out;
 }
 .contact-hover:hover{
-  background-color: rgb(255, 248, 189);
-  box-shadow: 0px 2px 5px rgb(161, 6, 45);
+  background-color: var(--highlight-color);
+  box-shadow: 0px 0px 12px var(--highlight-color);
   
 }
 
 .picture #img_1{
-    background-image: linear-gradient(to top, #fff, rgba(255, 0, 0, 0.075)), url(./img/reseau.jpg);
+    background-image: linear-gradient(to top, var(--background-color), rgba(255, 0, 0, 0.075)), url(./img/reseau.jpg);
     background-size: cover;
     height: 250px;
 }
 .picture #img_2{
-    background-image: linear-gradient(to top, #fff, rgba(255, 0, 0, 0.075)), url(./img/Parabolique.jpg);
+    background-image: linear-gradient(to top, var(--background-color), rgba(255, 0, 0, 0.075)), url(./img/Parabolique.jpg);
     background-size: cover;
     height: 250px;
 }
 .picture #img_3{
-    background-image: linear-gradient(to top, #fff, rgba(255, 0, 0, 0.075)), url(./img/nickel/mock_13.png);
+    background-image: linear-gradient(to top, var(--background-color), rgba(255, 0, 0, 0.075)), url(./img/nickel/mock_13.png);
     background-size: cover;
     height: 250px;
 }
 .picture #img_4{
-    background-image: linear-gradient(to top, #fff, rgba(255, 0, 0, 0.075)), url(./img/download.webp);
+    background-image: linear-gradient(to top, var(--background-color), rgba(255, 0, 0, 0.075)), url(./img/download.webp);
     background-size: cover;
     height: 250px;
 }
 
 .sliderCard img{
-    filter: drop-shadow(0px 10px 12px #fff);
+    filter: drop-shadow(0px 10px 12px var(--background-color));
+    transition: all 0.3s ease-in-out;
 }
 
 .sliderCard img:hover{
-    filter: drop-shadow(0px 0px 12px #000);
+    filter: drop-shadow(0px 0px 12px var(--text-color));
     transform: scale(112%);
 }
 
@@ -195,8 +224,9 @@ nav ul li a:hover{
     background-image: url();
   }
 .last {
-    background-image: linear-gradient(to left, #3333330a, rgba(226, 220, 220, 0.411) 50%, #3333330e);
+    background-color: var(--background-color);
 }
+
   footer ul {
     display: flex;
     flex-wrap: wrap;
@@ -209,10 +239,16 @@ nav ul li a:hover{
     text-decoration: none;
   }
   footer ul li a{
-    color: #000;
+    color: var(--text-color);
     text-decoration: none;
   }
 
   footer ul li a:hover {
-  color: rgb(255, 0, 76);
+  color: var(--highlight-color);
+  }
+
+  @media screen and (min-width: 476px) {
+    .break-contact {
+      display: none;
+    }
   }
